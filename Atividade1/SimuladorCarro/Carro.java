@@ -39,12 +39,12 @@ public class Carro {
 
         }else if (velocidadeAtual <= velocidadeMaxima) {
             this.velocidadeAtual = velocidadeMaxima;
-            System.out.println("Acelerando " + incremento + "Km/h: Velocidade atual = " + velocidadeAtual + "Km/h");
+            System.out.println("Acelerando " + incremento + "Km/h: Velocidade atual = " + velocidadeAtual + "Km/h" + "(Limite atingido)");
 
         }else System.out.println("não entrou");
     }
     public void frear(int incremento){
         this.velocidadeAtual -= incremento;
-        System.out.println("Freando " + incremento + "Km/h: Velocidade atual = " + velocidadeAtual + "Km/h (Limite atingido)");
+        System.out.println("Freando " + incremento + "Km/h: Velocidade atual = " + velocidadeAtual);
     }
 }

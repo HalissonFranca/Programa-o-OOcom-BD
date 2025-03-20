@@ -48,8 +48,7 @@ Ex15 - Aplicamos o **Princípio da Inversão de Dependência (DIP)**, desacoplan
 e fazendo-a depender de uma abstração (`MetodoPagamento`), e o **Princípio do Aberto/Fechado (OCP)**, permitindo a
 adição de novos métodos de pagamento sem modificar a classe `Caixa`.
 
-ExFinal - O código segue os princípios SOLID para garantir organização e flexibilidade. Cada classe tem uma função bem
-definida, evitando misturar responsabilidades. O sistema permite adicionar novos tipos de desconto e notificações sem
+ExFinal - O sistema permite adicionar novos tipos de desconto e notificações sem
 modificar as classes existentes, tornando-o expansível. Métodos de notificação podem ser substituídos sem impactar o
 funcionamento geral, garantindo compatibilidade. As interfaces são específicas para evitar que classes precisem
 implementar métodos desnecessários. Além disso, o uso de injeção de dependência desacopla as classes, facilitando

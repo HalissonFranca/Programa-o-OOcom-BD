@@ -1,0 +1,56 @@
+Ex1 - Foi separado as funcionalidades da classe Estudante, onde foi divididas
+onde o metodo salvar no banco recebe um objeto do tipo estudante e salva, e o metodo
+exibir recebe um objeto do tipo estudante para exibir as informações do estudante.
+
+Ex2 - Foi separado as funcionalidades onde a funcionalidade de calcular imposto recebe
+um objeto do tipo Venda que e as informações vão ser passada direto para essa classe, assim
+fazendo o calculo do imposto, e o recibo que segue a mesma pegada, recebe uma Venda.
+
+Ex3 - Foi separado as funcionalidades onde temos a formatação da mensagem sendo feito pegando
+o objeto do tipo Notificação para ser alterada pelo seu setMensagem, e a classe Enviar mensagem
+pega essa mensagem que foi da classe e manda.
+
+Ex4 - Foi separado as funcionalidades da classe Funcionario e foi criado um classe abstrata calculo,
+onde ela tem o metodo calcularSalario e a classe funcionario extende essa classe para que se for
+adicionado ou alterado o calculo seja mexido somente na classe abstrata calculo.
+
+Ex5 - Foi separado uma classe pare receber a mensagem e outra pada a formatação, onde a classe Texto
+onde recebe a mensageme extende a classe abstrata ja implementada FormatarTexto.
+
+Ex6 - Foi separado a classe produto onde ela instancia um objeto e extende a classe Calcular frete,
+essa classe pega o objeto proiduto e faz o calculo com ela, assim não e mudado a classe produto e se
+for adicionado ou mudado o calculo será alterado somente na classe abstrata calculo.
+
+Ex7 -Foi adicionado uma interface com o metodo mover, e quando foi adicionado uma nova classe essa classe
+implementa a classe Animais onde tem o metodo mover e tem que implementar a sua logica, para cada classe tem
+que ser feito isso para ser específico para cada animal
+
+Ex8 - Foi criado uma interface como metodo depositar, foi criado tambem uma classe que aceita deposito e saque
+essa classe implementa a interface conta que possui o metodo deposito e cria um metodo sacar. já a clase que aceita
+somente deposito implementa a interface conta que tem somente o metodo deposito dentro dela.
+
+Ex9 - Foi criado uma interface que tem o metodo imprimir e a classe impressora que consegue imprimir implementa ela
+já a outra classe que não consegue imprimir não implementa essa classe
+
+Ex10 - Foi utilizado 2 interface para que cada classe implemente sua propria funcionalidade sem interferir na da outra.
+
+Ex11 - Foi criado 2 interfaces que fazem uma função, e implementado dependente de sua necessidade.
+
+Ex12 - Foi separado com 2 interfaces e implementado em cada classe a sua função, caso necessario
+
+Ex13 - Foi criado uma classe interuptor onde ela implementa a logica de ligar e desligar e na classe
+lamparaEncandescente foi criado um objeto do tipo Interrupstor e os metodos ligar recebe o metodo do
+interruptor para ligar e desligar
+
+Ex14 -Foi criado uma interface onde temometodo ler, e cada classe inplementa metodo ler para cada um
+
+Ex15 - Aplicamos o **Princípio da Inversão de Dependência (DIP)**, desacoplando `Caixa` de uma implementação específica
+e fazendo-a depender de uma abstração (`MetodoPagamento`), e o **Princípio do Aberto/Fechado (OCP)**, permitindo a
+adição de novos métodos de pagamento sem modificar a classe `Caixa`.
+
+ExFinal - O código segue os princípios SOLID para garantir organização e flexibilidade. Cada classe tem uma função bem
+definida, evitando misturar responsabilidades. O sistema permite adicionar novos tipos de desconto e notificações sem
+modificar as classes existentes, tornando-o expansível. Métodos de notificação podem ser substituídos sem impactar o
+funcionamento geral, garantindo compatibilidade. As interfaces são específicas para evitar que classes precisem
+implementar métodos desnecessários. Além disso, o uso de injeção de dependência desacopla as classes, facilitando
+manutenção e futuras mudanças no sistema.
